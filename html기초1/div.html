@@ -10,13 +10,31 @@
 /* 태그 선택자 
         태그명을 선택하기 div,img, span 등등
         id로 선택하기   #선택자
+        class로 선택하기 .선택자 class는 태그 그룹화 목적
+
+        input[type='text'] -> input 태그중에 type이 text인것만 선택
+        input[name='email'] -> input 태그중에 name이 email인것만 선택
+
+        가상선택자
+
+        단위: 절대 단위, 상대 단위
+        절대단위 : px, pt
+        상대단위 : %, em, rem, vh,vp
+
+
+        
+
+
 */
 div{
     background: red;
 }
 #bluebox{
     background-color: blue;
-
+    width: 10%;
+}
+.box{
+    border: 3px dotted black;
 }
 
 
@@ -28,12 +46,16 @@ div{
 </head>
 <body>
 
-    <div id ="redbox">
+    <div id ="redbox" class="box">
         나는 빨간 상자입니다.
           
     </div>
     <div id ="bluebox">
         나는 파랑 상자입니다.
+    </div>
+    <div class="box">
+        그냥 박스이다.
+
     </div>
 
 
