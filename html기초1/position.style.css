@@ -1,0 +1,21 @@
+#wrap{
+
+    width: 1000px;
+    height: 1000px;
+
+}
+
+#box4{
+
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+
+}
+
+#box5{
+
+    position: sticky;
+    top: 0px;
+}
+
