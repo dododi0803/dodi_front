@@ -19,3 +19,22 @@
     padding: 10px 20px;
     
 }
+
+#logoWrap{
+    height: 50px;
+}
+
+#logoWrap img{ /* id가 iogoWrap인 태그 밑에 있는 img태그 선택*/
+    height: 100%;
+}
+
+/* 브라우저에 이미지 표현2 */
+
+#logoImg{
+    height: 50px;
+    background: url("./냥.png") no-repeat;
+    width: 100px;
+    background-size: cover;
+}
+
+
