@@ -6,6 +6,11 @@ public class 드론 {
    public static void main(String[] args) {
        ArrayList<드론영상>list = new ArrayList<>();
    
+
+       // sql문 실행 - select*from 드론영상
+
+
+
       list.add(new 드론영상("속리산 산불 감시", "2026-02-02"));
       list.add(new 드론영상("계족산 산불 감시", "2026-02-03"));
       list.add(new 드론영상("대전 중구 순찰","2026-02-04"));
