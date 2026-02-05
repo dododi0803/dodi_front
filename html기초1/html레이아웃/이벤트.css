@@ -9,6 +9,7 @@
     width: 1200px;
     margin: 0 auto;
     position: relative;
+    height: auto;
 }
 
 #header {
@@ -106,7 +107,9 @@
 
 
 #main {
-    /* height: 500px; */
+    height: auto;
+    width: 1100px;
+    
 }
 
 #footer {
@@ -124,4 +127,104 @@
     margin-right: 7px;
     padding: 5px 7px;
     color: black;
+}
+section {
+    margin-bottom: 70px;
+    display: flex;
+}
+
+
+/*이벤트*/
+#event-wrap {
+
+    display: flex;
+    gap: 20px;
+}
+
+#banner {
+    flex: 1;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background: #f2c94c;
+}
+
+#coupon-wrap {
+    display: flex;
+    gap: 20px;
+
+}
+
+#coupon-card {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px dashed #e67e22;
+}
+#new-menu-wrap ul {
+    list-style: none;
+}
+#new-menu-wrap li {
+
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+img{
+    margin-top: 20px;
+    height: 300px;
+}
+.imgbox {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgcard{
+    float: left;
+    height: 300px;
+    width: 150px;
+    margin: 0 10px;
+}
+
+.imgcard img{
+    width: 100%;
+}
+
+.imgcard2{
+    height: 300px;
+    width: 150px;
+    margin: 0 10px;
+    float: left;
+   
+}
+
+.imgcard2.a{
+background:url("./피스타치오케잌.jpg")no-repeat center;
+background-size: cover;
+} 
+.imgcard2.b{
+background:url("./딸기요거퐁당.jpg")no-repeat center;
+background-size: cover;
+} 
+.imgcard2.c{
+background:url("./말차에빠진딸기.jpg")no-repeat center;
+background-size: cover;
+} 
+.imgcard2.d{
+background:url("./오렌지스무디.jpg")no-repeat center;
+background-size: cover;
+} 
+.imgcard2.e{
+background:url("./초코에반한딸기케잌.jpg")no-repeat center;
+background-size: cover;
+} 
+#footer {
+    position: relative;   /* 또는 그냥 삭제 */
+    width: 1200px;
+    background-color: chocolate;
+    margin-top: 50px;
 }
