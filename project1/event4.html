@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <script>
+function toggleBoard(btn) {
+    const content = btn.nextElementSibling;
+
+    if (content.style.display === "flex") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "flex";
+    }
+}
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bakery & Cafe</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./이벤트.css">
+    <link rel="stylesheet" href="./event4.css">
 </head>
+
 <body>
 
 <div id="wrap">
@@ -21,7 +32,7 @@
         <nav id="nav">
             <div class="menu"><a href="./index.html">HOME</a></div>
             <div class="menu"><a href="./menu.html">MENU</a></div>
-            <div class="menu"><a href="./event.html">EVENT</a></div>
+            <div class="menu"><a href="./event4.htmls">EVENT</a></div>
             <div class="menu"><a href="./store.html">STORE</a></div>
         </nav>
     </header>
@@ -86,17 +97,7 @@
   </div>
 </section>
 
-<script>
-function toggleBoard(btn) {
-    const content = btn.nextElementSibling;
 
-    if (content.style.display === "block") {
-        content.style.display = "none";
-    } else {
-        content.style.display = "block";
-    }
-}
-</script>
 
     </main>
 
