@@ -28,52 +28,64 @@
 
     <main id="main">
 
-        <!-- 이벤트 -->
-        <section class="event">
-            <button onclick="이벤트()">진행중인 이벤트</button>
-            <div class="event-wrap">
-                <div class="event-banner">발렌타인데이 이벤트~!</div>
-                <div class="event-banner">겨울메뉴 이벤트~!</div>
-            </div>
-        </section>
+<!-- 이벤트 -->
+<section class="board">
+  <button class="board-btn" onclick="toggleBoard(this)">이벤트</button>
+  <div class="board-content event-wrap">
 
-        <!-- 쿠폰 -->
-        <section class="coupon">
-          <button onclick="쿠폰()">사용가능한 쿠폰</button>
-            <div class="coupon-wrap">
-                <div class="coupon-card">아메리카노 5% 할인</div>
-                <div class="coupon-card">도장 10개 시 원하는 음료 제공</div>
-                <div class="coupon-card">베이커리 2000원 할인</div>
-            </div>
-        </section>
+    <div class="event-banner">
+      💝 발렌타인데이 & 화이트데이 이벤트!!
+    </div>
 
-        <!-- 신메뉴 -->
-        <section class="new-menu">
-            <button onclick="신메뉴()">신메뉴</button>
-            <div class="new-menu-wrap">
-                <div class="menu-item">1.달콤한 신메뉴 소식</div>
-                <div class="menu-item">2.오늘의 추천 신메뉴</div>
-                <div class="menu-item">3.지금 가장 핫한 메뉴</div>
-                <div class="menu-item">4.놓치면 아쉬운 신메뉴</div>
-                <div class="menu-item">5.새로운 맛, 새로운 즐거움</div>
-            </div>
-        </section>
+    <div class="event-banner">
+      ❄️ 겨울 신메뉴 이벤트!!
+    </div>
 
-        <!-- 이미지 -->
-        <section class="menu-images">
-            <div class="imgbox">
-                <div class="imgcard"><img src="./피스타치오케잌.jpg" alt="">
-                <P>피스타치오케잌</P></div>
-                <div class="imgcard"><img src="./딸기요거퐁당.jpg" alt="">
-                <P>딸기요거퐁당</P></div>
-                <div class="imgcard"><img src="./말차에빠진딸기.jpg" alt="">
-                    <P>말차에빠진딸기</P></div>
-                <div class="imgcard"><img src="./오렌지스무디.jpg" alt="">
-                    <P>오렌지스무디</P></div>
-                <div class="imgcard"><img src="./초코에반한딸기케잌.jpg" alt="">
-                    <P>초코에반한딸기케잌</P></div>
-            </div>
-        </section>
+  </div>
+</section>
+
+<!-- 쿠폰 -->
+<section class="board">
+  <button class="board-btn" onclick="toggleBoard(this)">사용가능한 쿠폰</button>
+  <div class="board-content coupon-wrap">
+    <div class="coupon-card">☕ 아메리카노 5% 할인</div>
+    <div class="coupon-card">🎁 도장 10개 시 원하는 음료 제공</div>
+    <div class="coupon-card">🥐 베이커리 2000원 할인</div>
+  </div>
+</section>
+
+<!-- 신메뉴 -->
+<section class="board">
+  <button class="board-btn" onclick="toggleBoard(this)">신메뉴</button>
+  <div class="board-content new-menu-wrap">
+
+    <div class="new-menu-card">
+      <img src="./피스타치오케잌.jpg">
+      <p>1. 달콤한 신메뉴 소식</p>
+    </div>
+
+    <div class="new-menu-card">
+      <img src="./딸기요거퐁당.jpg">
+      <p>2. 오늘의 추천 신메뉴</p>
+    </div>
+
+    <div class="new-menu-card">
+      <img src="./말차에빠진딸기.jpg">
+      <p>3. 지금 가장 핫한 메뉴</p>
+    </div>
+
+    <div class="new-menu-card">
+      <img src="./오렌지스무디.jpg">
+      <p>4. 놓치면 아쉬운 신메뉴</p>
+    </div>
+
+    <div class="new-menu-card">
+      <img src="./초코에반한딸기케잌.jpg">
+      <p>5. 새로운 맛, 새로운 즐거움</p>
+    </div>
+
+  </div>
+</section>
 
     </main>
 

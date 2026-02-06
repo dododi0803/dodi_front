@@ -135,52 +135,103 @@ section {
 
 
 /*이벤트*/
-#event-wrap {
+/* 공통 게시판 */
+.board {
+    margin-bottom: 30px;
+}
 
+.board-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    background-color: sandybrown;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.board-content {
+    display: none;
+    padding: 25px;
+    background-color: bisque;
+    border-radius: 0 0 15px 15px;
+    margin-top: 5px;
+}
+
+/* 이벤트 */
+.event-wrap {
     display: flex;
     gap: 20px;
 }
 
-#banner {
+.event-banner {
     flex: 1;
-    height: 200px;
+    height: 180px;
+    display: flex;
     justify-content: center;
-    display: flex;
     align-items: center;
+    font-size: 24px;
     font-weight: bold;
-    background: #f2c94c;
+    color: white;
+    background: linear-gradient(135deg, chocolate, sandybrown);
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
-#coupon-wrap {
+/* 쿠폰 */
+.coupon-wrap {
     display: flex;
     gap: 20px;
-
 }
 
-#coupon-card {
+.coupon-card {
     flex: 1;
-    padding: 30px;
+    padding: 25px;
+    font-size: 20px;
     text-align: center;
-    font-weight: bold;
-    border: 2px dashed #e67e22;
+    border: 3px dashed chocolate;
+    border-radius: 20px;
+    background-color: lightyellow;
 }
-#new-menu-wrap ul {
-    list-style: none;
-}
-#new-menu-wrap li {
 
-    padding: 12px 0;
-    border-bottom: 1px solid #ddd;
+/* 신메뉴 */
+.new-menu-wrap {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.new-menu-card {
+    width: 180px;
+    text-align: center;
+}
+
+.new-menu-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.new-menu-card p {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 img{
     margin-top: 20px;
     height: 300px;
+    
 }
 .imgbox {
     text-align: center;
     display: flex;
     justify-content: space-around;
+    padding: 10px 0px;
+    margin: 10px;
 }
 
 .imgcard{
