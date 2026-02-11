@@ -1,5 +1,4 @@
-
-    /* 공통 */
+/* 공통 */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +7,7 @@
 
 body {
     background-color: #fff3f3;
-    margin: 0 auto;
+  
 }
 
 ul {
@@ -23,6 +22,7 @@ a {
     /* max-width: 1200px; */
     width: 1200px;
     min-height: 100vh;
+    margin: 0 auto;
     /* padding: 20px; */
 }
 
@@ -104,23 +104,19 @@ a {
 #main {
     max-width: 1160px;
     margin: 0 auto 50px;
-    padding-bottom: 80px;
+    padding: 20px;
+    flex: 1;
 }
 
 
 /* 페이지 하단 */
 #footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    padding: 50px 0 10px;
+    background: #e53935;
+    color: #eee;
     
-    background-color: #e53935;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
+    width: 200%;
 }
-
 
 .footerBox {
     width: 1200px;

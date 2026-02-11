@@ -8,20 +8,20 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     
     <link rel="stylesheet" href="./default.css">
-    
-
-    <script src="./Order.js"></script>
     <link rel="stylesheet" href="./Order.css">
     <link rel="stylesheet" href="./Order2.css">
+
+    <script src="./resources/js/common.js"></script>
+    <script src="./resources/js/payment.js"></script>
 </head>
 <body>
-
+<h1>🍜 맛나분식</h1>
     <div id="wrap">
 
     <!-- 헤더 -->
         <header id="header">
             <div id="title">
-                <h1>🍜 맛나분식</h1>
+                
                 <p>주문 확인 및 결제</p>
             </div>
             <nav id="nav">
@@ -65,22 +65,33 @@
             </nav>
             
         </header>
-   <main id="main">   
-        <div id="menuScreen">
-            <div class="menu-buttons">
-                <button onclick="addItem('떡볶이', 3500)">떡볶이 3,500원</button>
-                <button onclick="addItem('순대', 4000)">순대 4,000원</button>
-                <button onclick="addItem('김밥', 2500)">김밥 2,500원</button>
-            </div>
 
-            <h3>장바구니</h3>
-            <div id="cartList"></div>
-            <p id="totalPrice">총 금액: 0원</p>
+<main id="main">
+    <form id="orderForm">
+        <label>메뉴:</label>
+        <select id="menu">
+            <option value="떡볶이" data-price="3000">떡볶이 - 3000원</option>
+            <option value="순대" data-price="2500">순대 - 2500원</option>
+            <option value="튀김" data-price="2000">튀김 - 2000원</option>
+            <option value="김밥" data-price="2500">김밥 - 2500원</option>
+            <option value="라면" data-price="3500">라면 - 3500원</option>
+        </select><br>
 
-            <button onclick="goToPayment()">주문하기</button>
-        </div>
-    </main> 
+        <label>수량:</label>
+        <input type="number" id="quantity" value="1" min="1"><br>
 
+        <button type="button" onclick="addOrder()">주문 추가</button>
+    </form>
+
+<h3>주문 내역</h3>
+<ul id="orderList"></ul>
+<p>총 금액: <span id="total">0</span>원</p>
+
+</main>
+
+    </div>
+    
+    
     <footer id="footer">
         <div class="footerBox">
             <div class="footerText"><p>대표이사 : 김맛나    </p></div>
@@ -91,4 +102,3 @@
 
 </body>
 </html>
-

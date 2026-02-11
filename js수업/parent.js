@@ -1,0 +1,14 @@
+let search = document.getElementById("search");
+
+search.addEventListener('click', function(){
+    //새로운 브라우저 창 열기
+   // window.open("주소", 대상, 옵션);
+  
+   // 새창 옵션 : widht, height
+   //        위치: top, left
+   // 창크기 조절 기능: resizable=yes, no
+   // 스크롤바 표시: scollbars=yes, no
+   // 톨바 표시: tollbat=yes, no
+   // 주소창 표시: location=yes, no
+   window.open("child.html","_blank", "width=500,height=700,top=100,left=400");
+});
