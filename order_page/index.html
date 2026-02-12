@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>결제하기 - 맛나분식</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맛나분식</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./default.css">
-    <link rel="stylesheet" href="./Order.css">
-    <link rel="stylesheet" href="./Order2.css">
 
-    <script src="./resources/js/common.js"></script>
-    <script src="./resources/js/payment.js"></script>
+    <link rel="stylesheet" href="./resources/css/default.css">
+    <link rel="stylesheet" href="./resources/css/index.css">
+
+    <script src="./resources/js/index.js"></script>
 </head>
 <body>
-<h1>🍜 맛나분식</h1>
     <div id="wrap">
-
-    <!-- 헤더 -->
         <header id="header">
             <div id="title">
-                
-                <p>주문 확인 및 결제</p>
+                <h1>🍜 맛나분식</h1>
+                <p>111111</p>
             </div>
             <nav id="nav">
                 <ul class="menu">
@@ -41,7 +37,7 @@
                         </a>
                     </li>
                     <li class="menuItem">
-                        <a href="">
+                        <a href="order.html">
                             <span class="material-icons-outlined">
                                 shopping_cart
                             </span>
@@ -55,7 +51,7 @@
                         </a>
                     </li>
                     <li class="menuItem">
-                        <a href="">
+                        <a href="./admin.html">
                             <span class="material-icons-outlined">
                                 view_list
                             </span>
@@ -63,34 +59,18 @@
                     </li>
                 </ul>
             </nav>
-            
         </header>
+        <main id="main">
+            <div class="startBoxWrap">
+                <div class="startBox">
+                    <button class="startButton" >
+                        <p>주문하기</p>
+                    </button>
+                </div>
+            </div>
 
-<main id="main">
-    <form id="orderForm">
-        <label>메뉴:</label>
-        <select id="menu">
-            <option value="떡볶이" data-price="3000">떡볶이 - 3000원</option>
-            <option value="순대" data-price="2500">순대 - 2500원</option>
-            <option value="튀김" data-price="2000">튀김 - 2000원</option>
-            <option value="김밥" data-price="2500">김밥 - 2500원</option>
-            <option value="라면" data-price="3500">라면 - 3500원</option>
-        </select><br>
-
-        <label>수량:</label>
-        <input type="number" id="quantity" value="1" min="1"><br>
-
-        <button type="button" onclick="addOrder()">주문 추가</button>
-    </form>
-
-<h3>주문 내역</h3>
-<ul id="orderList"></ul>
-<p>총 금액: <span id="total">0</span>원</p>
-
-</main>
-
+        </main>
     </div>
-    
     
     <footer id="footer">
         <div class="footerBox">
@@ -99,6 +79,5 @@
             <div class="footerText"><p>Matna Company ⓒ All right Reserved.</p></div>
         </div>
     </footer>
-
 </body>
 </html>
